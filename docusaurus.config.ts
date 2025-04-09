@@ -61,7 +61,7 @@ const config: Config = {
     navbar: {
       title: 'Create Chronicles',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'My Site Logoxx',
         src: 'img/logo.svg',
       },
       items: [
