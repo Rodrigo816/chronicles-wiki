@@ -8,6 +8,7 @@ const config: Config = {
   title: 'Create Chronicles Series',
   tagline: 'Automation • Exploration • Magic • Quests • Bosses.',
   favicon: 'img/favicon.ico',
+  trailingSlash: true,
 
   // Set the production url of your site here
   url: 'https://github.com',
@@ -19,7 +20,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Rodrigo816', // Usually your GitHub org/user name.
   projectName: 'chronicles-wiki', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  deploymentBranch: 'main',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
