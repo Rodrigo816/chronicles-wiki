@@ -73,17 +73,15 @@ import AccordionItem from '@site/src/components/AccordionItem';
     *Note:* Drop chances are low, but higher-tier bosses have better odds.
   </AccordionItem>
   <AccordionItem header="How do I activate a molten vent?">
-    To activate a molten vent:
+    To activate a molten vent, place a **TNT** on top of the **dormant vent** and then ignite the TNT.  
+    For the full **BOOM** effect, make sure to stand in front of it.  
+    After the explosion, the vent becomes **active**, and you can place a **cobbled version** of it to turn it into the normal version.
 
-    1. Place **TNT** on top of a **dormant vent**
-    2. Ignite the TNT
-    3. After the explosion, the vent becomes active
+    For more information about the vents, check the **"Renewable Ores"** chapter.  
+    Each vent accepts different blocks. For example, to make **cobbled asurine**, you need **cream and honey touching each other** to generate cobbled asurine, which you can then use on your **asurine vent**.
 
-    You can now place **cobbled variants** on it to start resource generation.
+    Also, check [**Efficient molten vent resource…**](https://discord.com/channels/1199299846788624434/1252205490029596763) for examples of farms.
 
-    📘 See chapter **"Renewable Ores"** for:
-    - Which blocks each vent accepts
-    - Resource combos like *cream + honey → cobbled asurine*
 
     📺 Video Tutorial: [Watch here](https://www.youtube.com/watch?v=1ESi1NVvoi0)
   </AccordionItem>
