@@ -1,8 +1,8 @@
 ---
-id: atm-server-setup
+id: server-setup
 title: Server Setup Guide
 description: Guide for setting up server locally or on a server host.
-slug: /atm-server-setup
+slug: /server-setup
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
