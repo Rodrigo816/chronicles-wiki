@@ -110,4 +110,10 @@ import AccordionItem from '@site/src/components/AccordionItem';
     - **Use search in Discord** — your question might’ve already been asked and answered.
     - Stay creative! Everything can be automated from Chapter 1 through the end of progression.
   </AccordionItem>
+  <AccordionItem header="Where is Burst Glyph/Glass Sword?">
+    Both the burst glyph and glass sword have been removed from their normal places. Instead, you can find them inside of the gambler's crate in the black market.
+  </AccordionItem>
+  <AccordionItem header="How can I use vein mine?">
+    Vein miner is an enchantment that is sold in the Black Market. Once you have the book, and have applied the enchant to a tool, it will automatically vein mine ores! You can also put it on axes for a tree feller, or a hoe for quick harvest!
+  </AccordionItem>
 </Accordion>
