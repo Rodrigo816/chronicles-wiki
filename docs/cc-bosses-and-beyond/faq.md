@@ -8,10 +8,12 @@ slug: /ccbb-faq
 import Accordion from '@site/src/components/Accordion';
 import AccordionItem from '@site/src/components/AccordionItem';
 
-
-(WORK IN PROGRESS)This guide will explain how to set up an server locally, or with a server host.
-
----
+:::warning
+#### 🧠 Avoid asking questions just for the sake of it.
+- **Read the quest book** (Press `F4`) — it’s packed with tips and answers.
+- **Use search in Discord** — your question might’ve already been asked and answered.
+- Stay creative! Everything can be automated from Chapter 1 through the end of progression.
+:::
 
 <Accordion>
   <AccordionItem header="What is Create Chronicles?">
@@ -110,10 +112,5 @@ import AccordionItem from '@site/src/components/AccordionItem';
 
     More info: [Alex's Caves GitHub Issue](https://github.com/AlexModGuy/AlexsCaves/issues/519)
 
-  </AccordionItem>
-  <AccordionItem header="🤔 How to avoid asking questions?">
-    - **Read the quest book** (Press `F4`) — it’s packed with tips and answers.
-    - **Use search in Discord** — your question might’ve already been asked and answered.
-    - Stay creative! Everything can be automated from Chapter 1 through the end of progression.
   </AccordionItem>
 </Accordion>
