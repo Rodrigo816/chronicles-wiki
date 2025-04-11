@@ -1,0 +1,14 @@
+.authorLabel {
+  display: block;
+  width: fit-content;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  background-color: #b4b4b4;
+  opacity: 0.7;
+  font-size: 0.93rem;
+  margin-bottom: var(--ifm-leading);
+}
+
+html[data-theme='dark'] .authorLabel {
+  background-color: #182137;
+}

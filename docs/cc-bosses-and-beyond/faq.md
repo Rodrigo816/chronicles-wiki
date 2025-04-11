@@ -2,11 +2,12 @@
 id: ccbb-faq
 sidebar_position: 1
 title: FAQ
-description: Guide for setting up server locally or on a server host.
+description: Frequently asked questions.
 slug: /ccbb-faq
 ---
 import Accordion from '@site/src/components/Accordion';
 import AccordionItem from '@site/src/components/AccordionItem';
+
 
 :::warning
 #### 🧠 Avoid asking questions just for the sake of it.
