@@ -49,33 +49,125 @@ It’s a good idea to keep your server and client version up-to-date to benefit 
 Check the [Requirements](#-requirements) section to see which version of Java is required to run the modpack correctly.  
 If you don't know how to install Java, refer to the [Java Installation Guide](/docs/java-setup/).
 
-
 If you have multiple Java versions installed, the system default (`java`) might point to the wrong version. Fortunately, the server's startup script allows you to specify which Java installation to use.
 
-
-#### How it works
+#### How script works
 
 The script checks for an environment variable called `CCB_JAVA`. If it's set, it will use that as the Java executable.  
-If not, it defaults to your system’s installed `java` command.
+If not, it defaults to your system’s installed `java` command (`JAVA_HOME`).
 
-##### What happens if `CCB_JAVA` is not set?
+---
+### 🔍 Step 1: Check Your Java Version
 
-- The script will run using the default `java` command.
-- If that version is **older than Java 17**, the script will warn you and **exit**.
-- If it's Java 17 or newer, it will continue running normally.
+Run this command in your terminal:
 
-##### 🔧 Recommended Options
+```bash
+java -version
+```
+You should see output similar to:
+```bash
+openjdk version "17.x.x"
+```
+#### If the version matches the one listed in the requirements, you're good to continue! ✅
+---
+### 🔍 Step 2: Check if `JAVA_HOME` is already set
 
-* ##### Option 1: Use the system's Java (no CCB_JAVA needed)
-  If ``java -version`` returns 17 or higher, you're good to go without setting anything.
+Before setting anything, check if it's already configured:
 
-* ##### Option 2: Set `CCB_JAVA` permanently
-  Windows: Add ``CCB_JAVA`` to your system environment variables.
+<Tabs>
+  <TabItem value="w1" label="Windows (Command Prompt)">
+    ```cmd
+      echo %JAVA_HOME%
+    ```
+  * ✅ If it returns a valid path (like ``C:\Program Files\Java\jdk-17...``), you're good! You can <span className="bold-primary">skip Step 3.</span>
 
-  Linux/macOS: Add this to your ``.bashrc``, ``.zshrc``, or profile:
-```export CCB_JAVA="/your/custom/path/java```
+  * ❌ If it returns ``%JAVA_HOME%``, it means it's not set —<span className="bold-primary"> continue to Step 3</span> to set it.
+  </TabItem>
+  <TabItem value="mac2" label="Linux">
+    ```cmd
+      echo $JAVA_HOME
+    ```
+    If it returns nothing or an invalid path, follow the steps below to set it.
+  </TabItem>
+</Tabs>
+---
+### Step 3: Set JAVA_HOME
+<span className="bold-primary">JAVA_HOME</span> tells your system (and most launchers) where Java is installed.
 
+<Tabs>
+  <TabItem value="ww1" label="Windows">
+▶️ [Watch YouTube Video Guide](https://www.youtube.com/watch?v=UVlNBv3Yhv8) (if needed)
 
+1. Search for **Environment Variables** in the Start Menu  
+2. Click **"Edit the system environment variables"**  
+3. In the **System Properties** window, click **Environment Variables**
+
+4. **Check if `JAVA_HOME` is already listed** under:
+   - 🔸 **System variables**
+
+👉 If it exists, select it and click **Edit** instead of adding a duplicate.
+
+5. If it's not already set, click **New**:
+   - **Variable name**: `JAVA_HOME`  
+   - **Value**: your Java install folder (⚠️ *not* the `bin` folder)  
+     Example:
+
+     ```text
+     C:\Program Files\Eclipse Adoptium\jdk-17.0.9.9-hotspot
+     ```
+
+6. Click **OK → OK → OK**
+
+7. To verify it’s working, open **Command Prompt** and run:
+```cmd
+  echo %JAVA_HOME%
+```
+
+#### If it returns a valid path you did everything correct ✅
+
+:::tip
+### 🔍 How to Find the JDK Installation Path
+If you're unsure where your JDK is installed, you can run one of the following command to find its location:
+```
+where java
+```
+This will return something like:
+```
+C:\Program Files\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin\java.exe
+```
+Now just remove the ``\bin\java.exe`` part, and that’s your ``JAVA_HOME`` path:
+```
+C:\Program Files\Eclipse Adoptium\jdk-17.0.9.9-hotspot
+```
+
+:::
+  </TabItem>
+  <TabItem value="macc2" label="Linux">
+Add the following lines to your `~/.bashrc`, `~/.zshrc`, or `~/.profile`:
+
+```bash
+export JAVA_HOME="/path/to/java"
+export PATH="$JAVA_HOME/bin:$PATH"
+````
+
+#### 🔄 Reload the config:
+After editing the file, reload it using:
+```bash
+  source ~/.bashrc
+```
+> Replace ``.bashrc`` with ``.zshrc`` or ``.profile`` depending on your shell.
+
+#### To verify Run the following:
+```bash
+  echo $JAVA_HOME
+```
+
+  </TabItem>
+</Tabs>
+---
+### Optional: Use `CCB_JAVA` to Run Java (Skip this if you don't know)
+
+If you want to use a **specific Java version just for the server script**, you can set the `CCB_JAVA` environment variable.
 
 
 ---

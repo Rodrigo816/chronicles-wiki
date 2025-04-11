@@ -72,6 +72,11 @@ const config: Config = {
           label: 'Wiki',
         },
         {
+          href: 'https://www.bisecthosting.com/CHRONICLES',
+          position: 'right',
+          html: '<img src="https://i.imgur.com/psc32z8.png" alt="Need a server?" style="height: 28px; vertical-align: middle;" />',
+        },
+        {
           href: 'https://discord.gg/yRAmua5keG',
           label: 'Discord',
           position: 'right',
