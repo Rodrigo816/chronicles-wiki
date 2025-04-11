@@ -33,8 +33,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Wiki ${siteConfig.title}`}
+      description="Community wiki for the Create Chronicles — guides, FAQs, and setup help.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
