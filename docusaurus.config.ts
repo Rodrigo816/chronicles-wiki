@@ -38,42 +38,42 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          sidebarPath: './sidebars.ts'
         },
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag:{
+          trackingID: 'G-T0Z0WPHKVG',
+          anonymizeIP: true,
+        }
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/create_chronicles_series_social_card.jpg',
     colorMode:{
       defaultMode: 'dark',
     },
     navbar: {
       title: 'Create Chronicles',
       logo: {
-        alt: 'My Site Logoxx',
-        src: 'img/logo.svg',
+        alt: 'Create Chronicles Series',
+        src: 'img/dragon.svg',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Wiki',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://discord.gg/yRAmua5keG',
+          label: 'Discord',
           position: 'right',
         },
       ],
@@ -82,20 +82,24 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Wiki',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Server Setup Guide',
+              to: '/docs/server-setup',
+            },
+            {
+              label: 'Bosses and Beyond',
+              to: '/docs/category/bosses-and-beyond/',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'CurseForge',
           items: [
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Create Chronicles Bosses and Beyond',
+              href: 'https://www.curseforge.com/minecraft/modpacks/create-chronicles-bosses-and-beyond',
             }
           ],
         },
@@ -104,12 +108,16 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Rodrigo816/chronicles-wiki/',
+            },
+            {
+              label: 'Patreon',
+              href: 'https://www.patreon.com/CreateChronicles',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Create Chronicles Team, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Create Chronicles Team. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

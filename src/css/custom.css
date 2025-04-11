@@ -6,35 +6,51 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #D39000;
+  --ifm-color-primary-dark: #9E6C00;
+  --ifm-color-primary-darker: #6A4800;
+  --ifm-color-primary-darkest: #352400;
+  --ifm-color-primary-light: #DEAC40;
+  --ifm-color-primary-lighter: #E9C880;
+  --ifm-color-primary-lightest: #F4E3BF;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-background-color: #ffffff;
 }
 
 .navbar {
-  background-color: #212c32; /* Dark background */
+  background-color: #111b30; /* Dark background */
+}
+.navbar__brand, .navbar__link  {
+  color: #e3e3e3;
+}
+
+.lightToggleIcon_pyhR {
+  fill: #e3e3e3 !important;
+  color: #e3e3e3 !important;
+}
+
+.toggleButton_gllP:hover {
+  background-color: var(--ifm-color-primary-darker) !important;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+html[data-theme='dark'] {
+  --ifm-color-primary: #69FADC;
+  --ifm-color-primary-dark: #4FBBA5;
+  --ifm-color-primary-darker: #357D6E;
+  --ifm-color-primary-darkest: #1A3F37;
+  --ifm-color-primary-light: #C0FFEE;
+  --ifm-color-primary-lighter: #D4FCF1;
+  --ifm-color-primary-lightest: #E6FCF7;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: #0c1323;
 }
 
 .bold-primary {
   font-weight: bold;
-  color: #00cc66;
+  color: var(--ifm-color-primary);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --accordion-background: #072720;
-}
+
+

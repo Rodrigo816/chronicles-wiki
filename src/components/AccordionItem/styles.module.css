@@ -1,14 +1,3 @@
-.list li {
-  margin: 0.75rem 0;
-}
-
-.info {
-  color: rgb(0, 49, 0);
-  background-color: rgb(230, 246, 230);
-  padding: 1rem;
-  border-radius: 4px;
-}
-
 .item {
   border-top-width: 1px;
   border: 1px solid var(--ifm-color-emphasis-300);
@@ -54,9 +43,9 @@
 }
 
 .itemBtnExpanded {
-  background-color: var(--accordion-background);
+  background-color: var(--ifm-color-primary);
   box-shadow: inset 0 -1px 0 0 var(--ifm-color-emphasis-300);
-  color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-darkest);
 }
 
 .itemContent {
