@@ -58,12 +58,6 @@ import AccordionItem from '@site/src/components/AccordionItem';
     - +5 hearts from **Aether life shards**
     - More hearts from the **talent skill tree**
   </AccordionItem>
-  <AccordionItem header="How do I activate a molten vent? How do they work?">
-    You **can't**.
-
-    Vents are meant to encourage **transportation** and **distributed factory builds**.  
-    Even though some players found ways to bypass protections, those **won’t be shared here**.
-  </AccordionItem>
   <AccordionItem header="Where do I find legendary weapons from Simply Swords?">
     There are **10 exclusive weapons**, mostly obtainable via:
 
@@ -73,7 +67,7 @@ import AccordionItem from '@site/src/components/AccordionItem';
 
     *Note:* Drop chances are low, but higher-tier bosses have better odds.
   </AccordionItem>
-  <AccordionItem header="How do I activate a molten vent?">
+  <AccordionItem header="How do I activate a molten vent? How do they work?">
     To activate a molten vent, place a **TNT** on top of the **dormant vent** and then ignite the TNT.  
     For the full **BOOM** effect, make sure to stand in front of it.  
     After the explosion, the vent becomes **active**, and you can place a **cobbled version** of it to turn it into the normal version.
@@ -84,7 +78,14 @@ import AccordionItem from '@site/src/components/AccordionItem';
     Also, check [**Efficient molten vent resource…**](https://discord.com/channels/1199299846788624434/1252205490029596763) for examples of farms.
 
 
-    📺 Video Tutorial: [Watch here](https://www.youtube.com/watch?v=1ESi1NVvoi0)
+    📺 Video Tutorial:
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1ESi1NVvoi0?si=n2gIXuVWZcCQDwJ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </AccordionItem>
+    <AccordionItem header="How can I bring a molten vent to my base/factory?">
+    You <span className="bold-primary">can't</span>.
+
+    Vents are meant to encourage **transportation** and **distributed factory builds**.  
+    Even though some players found legit ways to bypass protections, those **won’t be shared here**.
   </AccordionItem>
   <AccordionItem header="How do I put a wrench in the deployer's hand?">
     Use a **chute** above the deployer and drop the wrench into it.  
@@ -102,14 +103,15 @@ import AccordionItem from '@site/src/components/AccordionItem';
     Vein miner is an enchantment that is sold in the Black Market. Once you have the book, and have applied the enchant to a tool, it will automatically vein mine ores! You can also put it on axes for a tree feller, or a hoe for quick harvest!
   </AccordionItem>
   <AccordionItem header="Is the pack compatible with Distant Horizons?">
-    Yes, but **no official support** is provided due to potential performance issues.
+    Yes, but **no official support** is provided due to potential performance issues.  
+    Distant Horizons is compatible as of version **1.4.0**.
 
     To reduce conflicts:
-    1. Go to `Alex's Caves` config and disable `biome_ambient_light_coloring`
-    2. In Distant Horizons:  
-      `DH Options > Advanced Options > Graphics > Advanced Graphics Options > Cave Culling`
 
-    More info: [Alex's Caves GitHub Issue](https://github.com/AlexModGuy/AlexsCaves/issues/519)
+    1. Go to `Alex's Caves` config
+    2. Disable the option: `biome_ambient_light_coloring`
+
+    📄 More info: [Alex's Caves GitHub Issue](https://github.com/AlexModGuy/AlexsCaves/issues/519)
 
   </AccordionItem>
 </Accordion>

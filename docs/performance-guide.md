@@ -11,17 +11,17 @@ import TabItem from '@theme/TabItem';
 import Accordion from '@site/src/components/Accordion';
 import AccordionItem from '@site/src/components/AccordionItem';
 
-🚀 Running a modded Minecraft like <span className="bold-primary">Create Chronicles</span> can be demanding. This guide will help you get the best performance by adjusting RAM, CPU usage, and key config settings.
+Running a modded Minecraft like <span className="bold-primary">Create Chronicles</span> can be demanding. This guide will help you get the best performance by adjusting RAM, CPU usage, and key config settings.
 
 ---
 
-### 📊 How Minecraft Uses System Resources
+### How Minecraft Uses System Resources
 
 - **RAM (Memory)**: Needed to load mods, world data, and keep entities active. Too little = lag, crashes. Too much = garbage collection issues.
 - **CPU (Processor)**: Minecraft is mostly single-threaded but uses more threads for mods, chunk loading, and world gen.
 - **Storage**: SSDs dramatically improve world loading and chunk saving speed.
 ---
-## 🖥️ Using a Reliable Launcher
+## Using a Reliable Launcher
 
 To ensure the modpack runs smoothly and updates properly, we strongly recommend using one of the following trusted launchers:
 
@@ -33,7 +33,7 @@ To ensure the modpack runs smoothly and updates properly, we strongly recommend 
 :::
 ---
 
-## 💾 RAM Allocation
+## RAM Allocation
 
 Recommended: <span className="bold-primary"> 8 GB of RAM</span>
 
@@ -63,7 +63,7 @@ Adjust the **maximum memory (Xmx)** and **minimum memory (Xms)** in the Java set
 ```
 ---
 
-## ⚙️ Recommended Java Args (JVM Flags)
+## Recommended Java Args (JVM Flags)
 Need smoother performance or fewer stutters?  
 Try these JVM arguments to optimize memory usage and garbage collection.
 <Tabs>
@@ -82,11 +82,11 @@ Try these JVM arguments to optimize memory usage and garbage collection.
     </TabItem>
 </Tabs>
 ---
-## 🎮 Update GPU Drivers
+## Update GPU Drivers
 
 Keeping your drivers up to date = better FPS.
 
-#### 🔍 Check your GPU:
+#### Check your GPU:
 1. Open **Task Manager** → **Performance tab**
 2. Click **GPU 0** to see your GPU model
 
@@ -95,7 +95,7 @@ Keeping your drivers up to date = better FPS.
 - **Intel**: [intel.com/download-center](https://www.intel.com/content/www/us/en/download-center/home.html)
 - **NVIDIA**: [nvidia.com/download](https://www.nvidia.com/Download/index.aspx?lang=en-us)
 ---
-## 🖥️ Video Settings
+## Video Settings
 
 - **Turn off FPS counter** and avoid using F3 — it lowers performance.
 - **Disable VSync** — use the FPS cap slider instead.
@@ -106,7 +106,7 @@ Keeping your drivers up to date = better FPS.
 - **Lower Entity Distance** to ~75%.
 ---
 
-## ⚙️ CPU Tips
+## CPU Tips
 
 Minecraft <span className="bold-primary">loves clock speed</span>, not core count.
 

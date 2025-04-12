@@ -14,7 +14,7 @@ This guide will explain how to set up an server locally, or with a server host.
 
 ---
 
-## 📋 Requirements
+## Requirements
 <Tabs>
   <TabItem value="ccbb" label="Create Chronicles: Bosses and Beyond">
     - A server with at least <span className="bold-primary">8GB</span> of RAM
@@ -28,7 +28,7 @@ This guide will explain how to set up an server locally, or with a server host.
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. Go to the [CurseForge page](https://www.curseforge.com/minecraft/modpacks) of the modpack
 2. Click on **Files** and choose the **same version** you plan to use on your client.
@@ -44,9 +44,9 @@ It’s a good idea to keep your server and client version up-to-date to benefit 
 
 ---
 
-## ☕ Java Setup
+## Java Setup
 
-Check the [Requirements](#-requirements) section to see which version of Java is required to run the modpack correctly.  
+Check the [Requirements](#requirements) section to see which version of Java is required to run the modpack correctly.  
 If you don't know how to install Java, refer to the [Java Installation Guide](/docs/java-setup/).
 
 If you have multiple Java versions installed, the system default (`java`) might point to the wrong version. Fortunately, the server's startup script allows you to specify which Java installation to use.
@@ -57,7 +57,7 @@ The script checks for an environment variable called `CCB_JAVA`. If it's set, it
 If not, it defaults to your system’s installed `java` command (`JAVA_HOME`).
 
 ---
-### 🔍 Step 1: Check Your Java Version
+### Step 1: Check Your Java Version
 
 Run this command in your terminal:
 
@@ -70,7 +70,7 @@ openjdk version "17.x.x"
 ```
 #### If the version matches the one listed in the requirements, you're good to continue! ✅
 ---
-### 🔍 Step 2: Check if `JAVA_HOME` is already set
+### Step 2: Check if `JAVA_HOME` is already set
 
 Before setting anything, check if it's already configured:
 
@@ -172,7 +172,7 @@ If you want to use a **specific Java version just for the server script**, you c
 
 ---
 
-## 🖥️ Local Installation
+## Local Installation
 
 - Extract the server files to a folder.
 
@@ -212,7 +212,9 @@ Dedicated server took XX seconds to load
   </AccordionItem>
 </Accordion>
 
-## ☁️ Server Host Installation
+---
+
+## Server Host Installation
 
 Most server hosts support one-click modpack installs, but if not, follow these steps:
 
@@ -223,7 +225,7 @@ Most server hosts support one-click modpack installs, but if not, follow these s
 
 ---
 
-## 🛠 Server Host Custom JAR
+## Server Host Custom JAR
 
 If your server host requires a `.jar` file:
 
@@ -241,7 +243,7 @@ If your server host requires a `.jar` file:
 2. Adjust `mcVersion` and `loaderVersion` if needed
 3. Set the **custom JAR** to `ServerStarter.jar` in your host settings
 
-## 🔁 Updating Your Server
+## Updating Your Server
 
 :::warning
 Make sure the server is completely shut down before proceeding.
