@@ -17,7 +17,7 @@ A Simple guide how to install Java.
   <TabItem value="ccbb" label="Create Chronicles: Bosses and Beyond">
     - <span className="bold-primary">Java 17</span>
   </TabItem>
-  <TabItem value="ccsj" label="Create Chronicles: TBA">
+  <TabItem value="ccsj" label="Create Chronicles: The Endventure">
     - <span className="bold-primary">Java 21</span>
   </TabItem>
 </Tabs>

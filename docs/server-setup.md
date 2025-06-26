@@ -21,7 +21,11 @@ This guide will explain how to set up an server locally, or with a server host.
     - A CPU with <span className="bold-primary">at least 3.5GHz</span>
     - <span className="bold-primary">Java 17</span> installed (preferably from [Adoptium](https://adoptium.net/temurin/releases/?version=17&package=jdk)).
   </TabItem>
-  <TabItem value="ccsj" label="Create Chronicles: TBA">
+  <TabItem value="ccsj" label="Create Chronicles: The Endventure">
+    - A server with at least <span className="bold-primary">8GB</span> of RAM
+    - A CPU with <span className="bold-primary">at least 3.5GHz</span>
+    - <span className="bold-primary">Java 21</span> installed (preferably from [Adoptium](https://adoptium.net/temurin/releases/?version=21&package=jdk)).  
+    - NeoForge Latest 1.21.1
   </TabItem>
 </Tabs>
 
