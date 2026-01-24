@@ -15,38 +15,83 @@ import AccordionItem from '@site/src/components/AccordionItem';
 - **Use search in Discord** — your question might’ve already been asked and answered.
 :::
 <Accordion>
+  <AccordionItem header="What’s inside the Luck Pouch? (RNG Box)">
+     The <span className="bold-primary">Luck Pouch</span> (RNG Box) gives{" "}
+  <span className="bold-primary">one random item</span> per use. Drop chances are{" "}
+  <span className="bold-primary">weighted</span> (higher weight = higher chance).
+
+  <div style={{ overflowX: "auto" }}>
+    <table>
+      <thead>
+        <tr>
+          <th>Item (with stack)</th>
+          <th>Weight</th>
+          <th>Approx. chance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>apotheosis:sigil_of_supremacy</code></td><td>1</td><td>0.16%</td></tr>
+        <tr><td><code>hazennstuff:blade_of_the_legate</code></td><td>3</td><td>0.47%</td></tr>
+        <tr><td><code>hazennstuff:the_tribunes_medallion</code></td><td>3</td><td>0.47%</td></tr>
+        <tr><td><code>hazennstuff:the_prefects_ring</code></td><td>3</td><td>0.47%</td></tr>
+        <tr><td><code>refinedstorage_quartz_arsenal:creative_wireless_crafting_grid</code></td><td>5</td><td>0.79%</td></tr>
+        <tr><td><code>refinedstorage:creative_wireless_autocrafting_monitor</code></td><td>5</td><td>0.79%</td></tr>
+        <tr><td><code>refinedstorage:creative_wireless_grid</code></td><td>5</td><td>0.79%</td></tr>
+        <tr><td><code>create_sa:creative_filling_tank</code></td><td>5</td><td>0.79%</td></tr>
+
+        <tr><td><code>starcatcher:worm</code> x64</td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>starcatcher:almighty_worm</code> x8</td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>irons_spellbooks:legendary_ink</code> x5</td><td>19</td><td>3.01%</td></tr>
+        <tr><td><code>starcatcher:seeking_worm</code> x8</td><td>14</td><td>2.22%</td></tr>
+
+        <tr><td><code>minecraft:potion</code> (apothic_attributes:strong_absorption)</td><td>20</td><td>3.16%</td></tr>
+        <tr><td><code>minecraft:potion</code> (apothic_attributes:strong_haste)</td><td>20</td><td>3.16%</td></tr>
+        <tr><td><code>minecraft:potion</code> (apothic_attributes:strong_knowledge)</td><td>20</td><td>3.16%</td></tr>
+        <tr><td><code>minecraft:potion</code> (apothic_attributes:extra_long_flying)</td><td>20</td><td>3.16%</td></tr>
+
+        <tr><td><code>minecraft:diamond</code> x30</td><td>30</td><td>4.75%</td></tr>
+        <tr><td><code>hazennstuff:true_nights_edge</code></td><td>2</td><td>0.32%</td></tr>
+        <tr><td><code>hazennstuff:shadow_scale</code> x10</td><td>16</td><td>2.53%</td></tr>
+        <tr><td><code>artifacts:novelty_drinking_hat</code></td><td>18</td><td>2.85%</td></tr>
+
+        <tr><td><code>phantasm:behemoth_meat</code></td><td>25</td><td>3.96%</td></tr>
+        <tr><td><code>phantasm:oblifruit</code></td><td>25</td><td>3.96%</td></tr>
+        <tr><td><code>alshanex_familiars:pet_soul</code> x2</td><td>25</td><td>3.96%</td></tr>
+        <tr><td><code>culturaldelights:pickle</code> x20</td><td>30</td><td>4.75%</td></tr>
+
+        <tr><td><code>sophisticatedbackpacks:everlasting_upgrade</code></td><td>10</td><td>1.58%</td></tr>
+        <tr><td><code>sophisticatedbackpacks:stack_upgrade_omega_tier</code></td><td>10</td><td>1.58%</td></tr>
+        <tr><td><code>sophisticatedstorage:stack_upgrade_omega_tier</code></td><td>10</td><td>1.58%</td></tr>
+
+        <tr><td><code>minecraft:totem_of_undying</code> x4</td><td>18</td><td>2.85%</td></tr>
+        <tr><td><code>minecraft:enchanted_golden_apple</code> x6</td><td>18</td><td>2.85%</td></tr>
+
+        <tr><td><code>armoroftheages:raijin_armor_feet</code></td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>armoroftheages:raijin_armor_legs</code></td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>armoroftheages:raijin_armor_chest</code></td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>armoroftheages:raijin_armor_head</code></td><td>14</td><td>2.22%</td></tr>
+
+        <tr><td><code>armoroftheages:o_yoroi_armor_feet</code></td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>armoroftheages:o_yoroi_armor_legs</code></td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>armoroftheages:o_yoroi_armor_chest</code></td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>armoroftheages:o_yoroi_armor_head</code></td><td>14</td><td>2.22%</td></tr>
+
+        <tr><td><code>armoroftheages:exalted_aurum_armor_feet</code></td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>armoroftheages:exalted_aurum_armor_legs</code></td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>armoroftheages:exalted_aurum_armor_chest</code></td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>armoroftheages:exalted_aurum_armor_head</code></td><td>14</td><td>2.22%</td></tr>
+
+        <tr><td><code>armoroftheages:pharaoh_armor_feet</code></td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>armoroftheages:pharaoh_armor_legs</code></td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>armoroftheages:pharaoh_armor_chest</code></td><td>14</td><td>2.22%</td></tr>
+        <tr><td><code>armoroftheages:pharaoh_armor_head</code></td><td>14</td><td>2.22%</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <span className="bold-primary">Note:</span> Chances are approximate and may not add up to exactly 100% due to rounding.
+  </AccordionItem>
   <AccordionItem header="How do I obtain Crystal Shards from the Crystal Chronicles mod?">
     Crystal Shards are obtained through <span className="bold-primary">crafting rituals.</span>
-
-    :::caution Multiplayer Warning
-    Ritual recipes might **not appear in JEI** while playing on a multiplayer server.
-
-    To fix this:
-    1. First open a **singleplayer** world.
-    2. Then join the **multiplayer** server.
-
-    This workaround loads the missing recipes.  
-    This issue is caused by the **Alshanex's Familiars** mod.
-    :::
-
-    #### List of Rituals Recipes:
-  ![Alt text](/img/rituals/ritual1.png)
-  ![Alt text](/img/rituals/ritual2.png)
-  ![Alt text](/img/rituals/ritual3.png)
-  ![Alt text](/img/rituals/ritual4.png)
-  ![Alt text](/img/rituals/ritual5.png)
-  ![Alt text](/img/rituals/ritual6.png)
-  ![Alt text](/img/rituals/ritual7.png)
-  ![Alt text](/img/rituals/ritual8.png)
-  ![Alt text](/img/rituals/ritual9.png)
-  ![Alt text](/img/rituals/ritual10.png)
-  ![Alt text](/img/rituals/ritual11.png)
-  ![Alt text](/img/rituals/ritual12.png)
-  ![Alt text](/img/rituals/ritual13.png)
-  ![Alt text](/img/rituals/ritual14.png)
-  ![Alt text](/img/rituals/ritual15.png)
-  ![Alt text](/img/rituals/ritual16.png)
-  ![Alt text](/img/rituals/ritual17.png)
   </AccordionItem>
   <AccordionItem header="How do I perform rituals? How do they work?">
     The ritual system is explained in the quest book, under the <span className="bold-primary">Alshanex's Familiars</span> chapter.
@@ -71,30 +116,10 @@ import AccordionItem from '@site/src/components/AccordionItem';
 
     These fragments act like <span className="bold-primary">Eyes of Ender</span>, guiding you toward the hidden <span className="bold-primary">Origin Island</span>.
   </AccordionItem>
-  <AccordionItem header="Why Craft and Addtions Recipes are broken? (straw / rolling mill /tesla coil / wires)">
-   This is a known issue, but <span className="bold-primary">the recipes still work</span> — just input the correct materials manually.
-
-   Unfortunately, this is something that only the mod author can fix, and there’s nothing we can do about it.
-
-  You can find the full list of working recipes below:
-
-  ![Alt text](/img/ca/1.png)
-  ![Alt text](/img/ca/2.png)
-  ![Alt text](/img/ca/3.png)
-  ![Alt text](/img/ca/4.png)
-  ![Alt text](/img/ca/5.png)
-  ![Alt text](/img/ca/6.png)
-  ![Alt text](/img/ca/7.png)
-  ![Alt text](/img/ca/9.png)
-  ![Alt text](/img/ca/10.png)
-  </AccordionItem>
   <AccordionItem header="How do I generate FE (Forge Energy) ?">
-  To generate FE, you need to craft an <span className="bold-primary">Alternator</span> from the *Craft & Additions* mod.
+    To generate FE, you need to either craft an <span className="bold-primary">Alternator</span> from the Craft & Additions mod or adventure into a more advanced and more efficient method with the <span className="bold-primary">Generator Coil</span> from New Age.
 
-  Once placed, it will convert <span className="bold-primary">rotational power</span> from Create into <span className="bold-primary">Forge Energy</span>.
-
-  You can learn more about this setup in the quest book, under the  
-  <span className="bold-primary">Create – Electricity</span> chapter.
+    Either one will convert rotational power from Create into Forge Energy. You can learn more about this setup in the quest book, under the <span className="bold-primary">Create – Electricity chapter.</span>
   </AccordionItem>  
   <AccordionItem header="Why can't I craft a specific spell?">
   Some spells are <span className="bold-primary">exclusive to the Market</span> and <span className="bold-primary">cannot be crafted or found in loot</span>.
@@ -127,4 +152,10 @@ import AccordionItem from '@site/src/components/AccordionItem';
 
     Follow the <span className="bold-primary">The Endventure Chapter</span> boss progression in the quest book.
   </AccordionItem>    
+  <AccordionItem header="Why can’t I use Apotheosis bookshelves?">
+  Apotheosis bookshelves have been <span className="bold-primary">disabled</span> in favor of the{" "}
+  <span className="bold-primary">Create Enchantment Industry</span> progression system.
+
+  Enchanting progression is now handled through Create’s automation-based setup instead of bookshelf power scaling.
+</AccordionItem>
 </Accordion>

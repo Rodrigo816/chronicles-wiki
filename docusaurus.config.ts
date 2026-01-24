@@ -94,6 +94,10 @@ const config: Config = {
               to: '/docs/server-setup',
             },
             {
+              label: 'The Endventure',
+              to: '/docs/ccend-faq/',
+            },
+            {
               label: 'Bosses and Beyond',
               to: '/docs/category/bosses-and-beyond/',
             },
@@ -102,6 +106,10 @@ const config: Config = {
         {
           title: 'CurseForge',
           items: [
+            {
+              label: 'Create Chronicles Endventure',
+              href: 'https://www.curseforge.com/minecraft/modpacks/create-chronicles-the-endventure',
+            },
             {
               label: 'Create Chronicles Bosses and Beyond',
               href: 'https://www.curseforge.com/minecraft/modpacks/create-chronicles-bosses-and-beyond',
