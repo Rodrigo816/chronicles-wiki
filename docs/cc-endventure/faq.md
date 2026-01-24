@@ -90,6 +90,17 @@ import AccordionItem from '@site/src/components/AccordionItem';
   </div>
   <span className="bold-primary">Note:</span> Chances are approximate and may not add up to exactly 100% due to rounding.
   </AccordionItem>
+  <AccordionItem header="Where can I obtain Zenalite ore, Dreadstone, and Chlorophyte?">
+    <span className="bold-primary">Zenalite</span> now generates in the{" "}
+    <span className="bold-primary">Eternal Starlight</span> dimension.
+
+    <span className="bold-primary">Dreadstone</span> ore can be found in the{" "}
+    <span className="bold-primary">Overworld</span>.
+
+    <span className="bold-primary">Chlorophyte</span> generates in the{" "}
+    <span className="bold-primary">Overworld</span>, primarily in{" "}
+    <span className="bold-primary">Swamps</span>.
+  </AccordionItem>
   <AccordionItem header="How do I obtain Crystal Shards from the Crystal Chronicles mod?">
     Crystal Shards are obtained through <span className="bold-primary">crafting rituals.</span>
   </AccordionItem>
